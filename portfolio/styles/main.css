@@ -1,0 +1,26 @@
+/*
+Creator: Inigo Meshoulam
+Date Created: 29/04/21
+Date last modified:
+*/
+
+body {
+    background-color: #fef9ff;
+    font-family: arial, helvetica, sans-serif;
+    color: #0d1f2d
+}
+header, footer {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px
+}
+h1 {
+    font-size: 2.5em;
+}
+nav {
+    margin-top: 4px;
+    border-top: 3px dashed #546a7b;
+    border-bottom: 3px dashed #546a7b;
+}

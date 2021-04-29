@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+        .aligncenter
+        {
+            text-align:center;
+            display:block;
+        }
+
+        .blocktext
+        {
+            margin-left: auto;
+            margin-right: auto;
+            width: 45em
+        }
+
+        .grid-container
+        {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          padding: 10px;
+        }
+
+        .grid-item
+        {
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .fieldset
+        {
+            border: 0;
+        }
+        </style>
+
+        <title>Contact Us: Carb Cart</title>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1 style="text-align:center">Contact Us</h1>
+            </header>
+
+            <nav>
+                <hr>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact Us</a>
+                <hr>
+            </nav>
+
+            <form class="aligncenter" action="submit.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value=""><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" value=""><br>
+                <label for="phone">Name:</label>
+                <input type="text" id="phone" name="phone" value=""><br>
+
+                <label for="inquiry-reason">Reason for inquiry:</label>
+                <select id="inquiry-reason" name="inquiry-reason">
+                    <option value="catering" selected>Catering</option>
+                    <option value="party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+                <label for="info">Additional Information</label><br>
+                <textarea id="info" name="info" rows="4" cols="80"></textarea> <br>
+                <br>
+
+                <fieldset class="fieldset">
+                    <legend>Have you eaten at the cart?</legend>
+                    <input type="radio" id="choice1" name="question" value="no">
+                    <label for="choice1">No</label>
+                    <input type="radio" name="choice2" name="question" value="yes">
+                    <label for="choice2">Yes</label>
+                </fieldset>
+
+                <br>
+
+                <fieldset class="fieldset">
+                    <legend>Best days to contact you:</legend>
+                    <input type="checkbox" id="monday" name="contact" value="monday">
+                    <label for="monday">M</label>
+                    <input type="checkbox" id="teusday" name="contact" value="teusday">
+                    <label for="teusday">T</label>
+                    <input type="checkbox" id="wednesday" name="contact" value="wednesday">
+                    <label for="wednesday">W</label>
+                    <input type="checkbox" id="thursday" name="contact" value="thursday">
+                    <label for="thursday">Th</label>
+                    <input type="checkbox" id="friday" name="contact" value="friday">
+                    <label for="friday">F</label>
+                </fieldset>
+                <br>
+                <input type="submit" name="submit" value="Send Information">
+            </form>
+
+            <footer class="aligncenter">
+                <br>
+                <br>
+                <hr>
+                <p>East Dulwich Grove, London, SE22</p>
+                <p>02084206969</p>
+            </footer>
+
+        </main>
+    </body>
+</html>
