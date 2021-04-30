@@ -1,0 +1,17 @@
+
+
+
+
+/* Modified default selectors */
+header, footer {
+    text-align: center;
+    font-family: arial;
+
+    background-color: #5b7d87;
+    color: #fef9ff;
+
+    width: auto;
+    padding: 1em;
+}
+
+/* Custom classes */

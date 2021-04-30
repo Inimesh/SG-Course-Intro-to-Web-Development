@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/restaurantStyles.css">
         <style type="text/css">
         .aligncenter
         {
@@ -19,15 +20,24 @@
         .grid-container
         {
           display: grid;
+          text-align: justify;
           grid-template-columns: auto auto auto;
           padding: 10px;
+          background-color: black;
+          color: white;
+          margin-bottom: 20px;
         }
 
         .grid-item
         {
           padding: 20px;
-          font-size: 30px;
-          text-align: center;
+          font-size: 20px;
+        }
+
+        .dish {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
         }
         </style>
 
@@ -52,33 +62,32 @@
 
             <div class="grid-container" id="menu_grid">
                 <div class="grid-item">
-                    <strong>Kentucky Fried Cauliflower with Fries</strong><br>
+                    <p class="dish">Kentucky Fried Cauliflower with Fries</p><br>
                     Deep-fried cauliflower chunks with fries, served with a
                     home made condiment of your choice and chicken salt.
                 </div>
                 <div class="grid-item">
-                    <strong>Vegan Mac & Cheese with Fake Bacon</strong><br>
+                    <p class="dish">Vegan Mac & Cheese with Fake Bacon</p><br>
                     Butternut squash vegan mac and cheese with vegan bacon bits,
                     served with a selection of hot sauces.
                 </div>
                 <div class="grid-item">
-                    <strong>Curry of the Night</strong><br>
+                    <p class="dish">Curry of the Night with Rice and Chapati</p><br>
                     The daily special curry served with rice, a chapati and a
                     selection of chutneys/pickles.
                 </div>
                 <div class="grid-item">
                 </div>
                 <div class="grid-item">
-                    <strong>Drinks (£1)</strong><br>
-                    Club-Mate Soda
+                    <p class="dish">Drinks (£1)</p><br>
+                    <div style="text-align:center">
+                        Club-Mate Soda
+                    </div>
                 </div>
 
             </div>
 
-            <footer class="aligncenter">
-                <br>
-                <br>
-                <hr>
+            <footer>
                 <p>East Dulwich Grove, London, SE22</p>
                 <p>02084206969</p>
             </footer>
