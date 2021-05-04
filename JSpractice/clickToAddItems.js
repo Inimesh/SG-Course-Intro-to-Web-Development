@@ -40,7 +40,7 @@ function validateItems() {
     document.getElementById("subtractResult").innerText = num1 - num2;
     document.getElementById("multiplyResult").innerText = num1 * num2;
     document.getElementById("divideResult").innerText = num1 / num2;
-    // We are returning flase so that the form doesn't submit
+    // We are returning false so that the form doesn't submit
     // and so that we can see the results.
     return false;
 

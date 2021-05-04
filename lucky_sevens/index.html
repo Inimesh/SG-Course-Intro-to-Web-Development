@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Lucky Sevens</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="game.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 style="margin-bottom: 30px">Lucky Sevens</h1>
+        </header>
+        <div class="container">
+            <p>Rules of the game: Each round, the program rolls a pair of dice and if the total is = 7, you win $4. If the total is not 7, you lose $1.
+                The game continues until there is no money left.</p>
+                <p>The results show you some statistics of the game and ultimately to demonstrate its futility.</p>
+        </div>
+
+        <div class="container">
+            <form name="luckySevens" onsubmit="return validate()" class="form">
+             <div class="form-group">
+                 <label for="startingBet">Starting Bet: $</label>
+                 <input type="number" step="0.01" class="form-control" id="startingBet">
+             </div>
+             <button type="submit" id="playButton" class="btn btn-default">Play!</button>
+            </form>
+            <table id="resultsTable" class="table table-striped" style="display:none;">
+                <tbody>
+                    <tr>
+                        <th>Starting Bet</th>
+                        <td><span id="startingBetResult"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Total rolls before going broke</th>
+                        <td><span id="totalRollsResult"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Biggest Pot</th>
+                        <td><span id="biggestPotResult"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Roll count at Biggest Pot</th>
+                        <td><span id="numRollsAtbiggestPotResult"></span></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </body>
+</html>
