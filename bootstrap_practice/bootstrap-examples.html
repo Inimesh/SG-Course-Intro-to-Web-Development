@@ -53,6 +53,46 @@
                         ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
+            <div class="accordion" id="accordionExample"> <!-- Accordion object -->
+                <div class="card"> <!-- Container for a single card in accoridion -->
+                    <div class="card-header" id="portfolio01"> <!-- Header of card -->
+                        <h5 class="mb-0"> <!-- Formats text with "mb-0" class to have no space in bottom margin -->
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <!-- Two classes that define a button that includes the text that should appear in the card title -->
+                                My first Portfolio Piece
+                                <!-- jQuery data-toggle option to collapse and expand the card's body, data target to specify what is to be collapsed/expanded on toggle, -->
+                                <!-- as well has HTML ARIA standards to create accessible controls.-->
+                                <!-- "false" means that the card is not automatically expanded on page load with a definition of which part of the page it controls.-->
+                            </button>
+                        </h5>
+                    </div>
+                    <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample"> <!-- identifies area that matches target in the button -->
+                        <!-- .collapse class targets the jQuery function that will collapse the div. It is also desiganated as a child of #accordionExample, -->
+                        <!-- the id assigned to the accordion itself. -->
+                        <div class="card-body"> <!-- Container for what will be displayed in the body of the card. -->
+                            <p><a href="" target="_blank">Name of First Website</a></p> <!-- A link to the website -->
+                            <figure><img src="images/website-1778529.png" alt="Screenshot of home page" /></figure> <!-- A 'screenshot' of the website -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card"> <!-- Second card -->
+                    <div class="card-header" id="portfolio02">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                My Second Portfolio Piece
+                            </button>
+                        </h5>
+                    </div>
+                    <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><a href="" target="_blank">Name of Second Website</a></p>
+                            <figure><img src="images/website-1778529.png" alt="Screenshot of home page" /></figure>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
